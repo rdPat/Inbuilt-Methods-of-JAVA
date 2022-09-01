@@ -1,0 +1,124 @@
+/* 
+ *                         Most commonly used methods of java
+ *
+ *@author: rdPat
+ *@version: 01
+ *
+ *
+ * 1.String Methods
+ * 2.Array Methods
+ * 3.Number Methods
+ * 
+ */
+/*
+ * 1. String Methods
+ *    1. ====>  comapareTo() method : used for compairing two Strings
+ *              Syntax: s1.compareTo(s2);
+ *              uses three way comparison and return in following pattern
+ *              if s1=s2 then 0
+ *              if s2>s1 then positive value
+ *              if s1<s2 then negative value
+ *              @ COMPARISON BASED ON : ANSI CHARACTER CODES
+ *              A to Z (65 to 90)
+ *              a to z (97 to 122)
+ *              0 to 9 (48 to 57)
+ *    
+ *    2. ====>  equals() method : return true or false;
+ *              Syntax: s1.equals(s2); 
+ *              Comparison based on Values
+ * 
+ *    3. ====> concat() used for joining two string
+ *             Syntax: s1.concat(s2);
+ * 
+ *    4. ====> charAt() used to get character present in string at specified 
+ *             position
+ *             HERE indexing starts from (0 to str.length())
+ *     
+ *    5. ====> equalsIgnorecase() method compares two string ignoring cases(up/low)
+ *             Syntax: s1.equalsIgnorecase(s2);
+ *             returns 
+ *             true if s1 is equals to s2
+ *             false if s1 and s2 are different strings
+ *    
+ *    6. ====> toUpperCase() method converts lower characters to upper case 
+ *             Syntax: s1.toUpperCase();
+ *            
+ *    7. ====> toLowercase() method to convert to lower case from upper case
+ *             Syntax: s1.toLowerCase();
+ *  
+ *    8. ====> trim() method removes spaces from both sides of a string
+ *             Syntax: s1.trim();
+ *        
+ *    9. ====> substring() method  returns part of string.
+ *             Syntax: s1.substring(int begining_index,int end_index_ofstring_part);
+ *                     s1.substring(int startfrom_this_index_till_end);
+ *                     
+ * 
+ *    10. ====> endsWith() method return t/f depending on ends with specified suffix or not
+ *              Syntax: s1.endsWith(String s) *here s is part we want to check whether s1 ends with it or not
+ *              it may contains part of string too *
+ *              eg. str="hello world hiii";
+ *                  .print(str.endsWith("ii"));       //true
+ *                  .print(str.endsWith("world hiii"));  //true
+ *                  .print(str.endsWith("ing"));     //false
+ * 
+ * 
+ *     11. ====> length() method return length of string that is how many characters are present in string
+ *               Syntax: s1.length();
+ * 
+ *     
+ * 
+ *  2. array Methods
+ *      
+ *     1. ====> length property returns how many elements present in array
+ *              Syntax: arr.length;
+ *    
+ *     2. ====> toString() method convert array to string type
+ *              import java.util.*;
+ *              Syntax: String str= Arrays.toString(arr);
+ *      
+ *     3. ====> contains() method checks if array contains certains value or not return true or false 
+ *              if contains it return true otherwise false
+ *              Syntax: boolean b=Arrays.asList(arr.contains("element_want_to_find"));
+ * 
+ *   3. Number Methods
+ *     
+ *      1. ====> compareTo() method compares to Integer(class which wraps a int value)
+ *               Integer i=10;
+ *               Syntax: i.compareTo(100);      //return 1
+ *                 i.compareTo(10);    //return 0
+ *                 i.compareTo(3);  //return -1
+ * 
+ *      2. ====> equals() method compares to Integer(class which wraps a int value)
+ *               returns true or false
+ *               Integer i=10;
+ *               Syntax: i.equals(100);      //false
+ *                 i.equals(10);    //true
+ *                 i.equals(3);  //false
+ * 
+ *      3. ===> abs() method return absolute value of double and float
+ *              return positive value only
+ *              THIS FUNCTION IS OF MATH CLASS
+ *              double a=-10.56;
+ *              Syntax: .print(Math.abs(a));     //10
+ * 
+ *      4. ====> round() method return round off value of provided float and double
+ *               a=10.45;
+ *               b=10.75;
+ *               c=-10.34;
+ *               Syntax: Math.round(a);
+ *               .print(Math.round(a));     //10
+ *               .print(Math.round(b));     //11
+ *               .print(Math.round(c));     //-10
+ *  
+ *       
+ *      5. ====> min() returns minimum value between two numbers
+ *               Syntax: Math.min(a,b);
+ *     
+ *      6. ====> max() returns maximum value between two numbers
+ *               Syntax: Math.max(a,b);
+ * 
+ */
+
+
+
